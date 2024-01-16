@@ -1,0 +1,64 @@
+header{
+    background-color: var(--bool-lighter);
+}
+
+.logo{
+        display: inline-block;
+}
+
+body{
+    background-color: var(--bool-backgorund);
+}
+
+.blocco{
+    background-color:var(--bool-lighter) ;
+    /*border: 1px solid black;*/
+    margin: auto ;
+    padding: 15px;
+    width: 700px;
+    margin-top: 5%;
+}
+
+.editorial{
+    background-color: var(--bool-secondary);
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 0.6rem;
+    color: var(--bool-lighter);
+}
+
+.menu{
+    margin-bottom: 1px;
+    background-color: var(--bool-lighter);
+    border-radius: 0,5rem;
+    }
+
+
+.task{
+    background-color: var(--bool-secondary);
+    color: var(--bool-lighter);
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 0.3rem;
+}
+
+.section{
+    background-color: #ffffff;
+    color: var(--bool-section);
+    border: 1px solid var(--bool-section);
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 0.3rem;
+}
+
+:root{
+    --bool-backgorund: #f6f8f9;
+    --bool-secondary: #47adf1;
+    --bool-q1goals: #9c72e4;
+    --bool-primary: #64c0a9;
+    --bool-mobile: rgba(242, 158, 51, 1);
+    --bool-website: #d863a1;
+    --bool-lighter: #ffffff;
+    --bool-accent: #eb5952;
+    --bool-section: #cbd0d5;
+}
