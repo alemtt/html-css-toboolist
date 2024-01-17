@@ -42,6 +42,9 @@ body{
     color: var(--bool-lighter);
 }
 
+.container{
+    padding: 1rem 2rem;
+}
 
 :root{
     --bool-backgorund: #f6f8f9;
