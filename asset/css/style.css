@@ -1,37 +1,96 @@
-header{
-    background-color: var(--bool-lighter);
+/* #region common*/
+ul{
+    list-style: none;
 }
 
-.logo{
-        display: inline-block;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
-
 body{
     background-color: var(--bool-backgorund);
 }
+/* #endregion common*/
 
-.blocco{
-    background-color:var(--bool-lighter) ;
-    /*border: 1px solid black;*/
-    margin: auto ;
-    padding: 15px;
-    width: 700px;
-    margin-top: 5%;
+/* #region utilities*/
+
+.mark{
+    display: inline-block;
+    border-radius: 50%;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
-.editorial{
-    background-color: var(--bool-secondary);
+.mark.check{
+    color: var(--bool-primary);
+    border: 1px solid var(--bool-primary);
+}
+
+.mark.cross{
+    color: var(--bool-accent);
+    border: 1px solid var(--bool-accent);
+}
+
+.button{
     font-size: 10px;
     padding: 5px;
     border-radius: 0.6rem;
     color: var(--bool-lighter);
 }
 
-.menu{
-    margin-bottom: 1px;
+
+:root{
+    --bool-backgorund: #f6f8f9;
+    --bool-secondary: #47adf1;
+    --bool-q1goals: #9c72e4;
+    --bool-primary: #64c0a9;
+    --bool-mobile: rgba(242, 158, 51, 1);
+    --bool-website: #d863a1;
+    --bool-lighter: #ffffff;
+    --bool-accent: #eb5952;
+    --bool-section: #cbd0d5;
+}
+/* #endregion utilities*/
+
+
+/*#region header*/
+.logo{
+    vertical-align: middle;
+}
+
+.logo_text{
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+.site_header{
     background-color: var(--bool-lighter);
-    border-radius: 0,5rem;
-    }
+    padding: 0.5rem 1rem;
+    
+}
+
+/*#endregion header*/
+
+/*#region main*/
+
+.menu{
+    border-bottom: 4px solid var(--bool-backgorund);
+    padding: 1rem 2rem;
+    
+    
+}
+.site_main{
+    background-color:var(--bool-lighter) ;
+    /*border: 1px solid black;*/
+    margin: auto ;
+    width: 1000px;
+    margin-top: 5%;
+    border-radius: 1rem;
+}
 
 
 .task{
@@ -51,14 +110,27 @@ body{
     border-radius: 0.3rem;
 }
 
-:root{
-    --bool-backgorund: #f6f8f9;
-    --bool-secondary: #47adf1;
-    --bool-q1goals: #9c72e4;
-    --bool-primary: #64c0a9;
-    --bool-mobile: rgba(242, 158, 51, 1);
-    --bool-website: #d863a1;
-    --bool-lighter: #ffffff;
-    --bool-accent: #eb5952;
-    --bool-section: #cbd0d5;
+.editorial{
+    background-color: var(--bool-secondary);
+}  
+
+.goals{
+    background-color: var(--bool-q1goals);
 }
+
+.recruiting{
+    background-color: var(--bool-primary);
+}
+
+.mobile{
+    background-color: var(--bool-mobile);
+}
+
+.website{
+    background-color: var(--bool-website);
+}
+
+.sale{
+    background-color: var(--bool-primary);
+}
+/*#endregion main*/
